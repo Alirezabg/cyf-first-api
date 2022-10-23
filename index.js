@@ -3,12 +3,10 @@ const fetch = require("node-fetch");
 const app = express();
 const port = 5000;
 
-
-
 let YOUR_NAME = "Alireza";
 let YOUR_LUCKY_NUMBER = "5";
 
-let URL = "https://cyf-second-api-fwybsk7fca-nw.a.run.app";
+let URL = "https://34.125.160.19";
 
 app.get("/", (req, res) => {
   res.send(`Welcome to ${YOUR_NAME}'s 1st API`);
