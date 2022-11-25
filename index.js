@@ -6,7 +6,7 @@ const port = 5000;
 let YOUR_NAME = "Alireza";
 let YOUR_LUCKY_NUMBER = "5";
 
-let URL = "https://34.125.160.19";
+let URL = process.env.API2_URL || "http://localhost:5001";
 
 app.get("/", (req, res) => {
   res.send(`Welcome to ${YOUR_NAME}'s 1st API`);
